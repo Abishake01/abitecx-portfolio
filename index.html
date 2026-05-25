@@ -1180,13 +1180,38 @@
       <div class="project-card fade-up">
         <div class="slider-wrapper" id="slider3">
           <div class="slides" id="slides3">
+
+            <!-- Slide 1: EMS Dashboard -->
             <div class="slide">
               <div class="project-shot-wrap">
-                <img class="project-shot" src="images/ems.png" alt="EMS — Employment Management screenshot" />
+                <img class="project-shot" src="images/ems_dash.png" alt="EMS dashboard screenshot" />
               </div>
             </div>
+
+            <!-- Slide 2: Employees -->
+            <div class="slide">
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/ems_emp.png" alt="EMS employees screenshot" />
+              </div>
+            </div>
+
+            <!-- Slide 3: Analytics -->
+            <div class="slide">
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/ems_ana.png" alt="EMS analytics screenshot" />
+              </div>
+            </div>
+
           </div>
-          <div class="slide-label" id="label3">Overview</div>
+          <!-- Slider nav -->
+          <div class="slider-arrow slider-prev" onclick="slideMove('slider3','slides3','dots3',-1)">‹</div>
+          <div class="slider-arrow slider-next" onclick="slideMove('slider3','slides3','dots3',1)">›</div>
+          <div class="slider-controls" id="dots3">
+            <div class="slider-dot active" onclick="slideTo('slides3','dots3',0)"></div>
+            <div class="slider-dot" onclick="slideTo('slides3','dots3',1)"></div>
+            <div class="slider-dot" onclick="slideTo('slides3','dots3',2)"></div>
+          </div>
+          <div class="slide-label" id="label3">Dashboard</div>
         </div>
         <div class="project-body">
           <div class="project-type">SaaS · HR Management</div>
@@ -1194,8 +1219,8 @@
           <div class="project-desc">An employment management dashboard for HR teams: employee records, shift scheduling, and attendance tracking. UI-focused admin tools for faster HR workflows.</div>
           <div class="project-tags" style="margin-bottom:16px;">
             <span class="tag">React</span>
+            <span class="tag">Tailwind CSS</span>
             <span class="tag">Admin UI</span>
-            <span class="tag">Scheduling</span>
             <span class="tag">Reports</span>
           </div>
           <a href="https://ems-nine-ebon.vercel.app/" target="_blank" class="project-live">View Live ↗</a>
@@ -1278,7 +1303,7 @@
       </div>
       <div class="testimonial-card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"Super da thambi — naloma iruku, romba nalla iruku da, thanks da!"</p>
+        <p class="testimonial-text">"Super da thambi — nalla iruku, romba nalla iruku da, thanks da!"</p>
         <div class="testimonial-author">
           <div class="author-avatar">R</div>
           <div>
@@ -1334,9 +1359,10 @@
     // ─── SLIDER ───
     const sliderLabels = {
       slides1: ['Dashboard','Products','Phones','Sales History','Reports'],
-      slides2: ['Opening','Event','Per','Music','Contact']
+      slides2: ['Opening','Event','Per','Music','Contact'],
+      slides3: ['Dashboard','Employees','Analytics']
     };
-    const sliderState = { slides1: 0, slides2: 0 };
+    const sliderState = { slides1: 0, slides2: 0, slides3: 0 };
 
     function slideTo(slidesId, dotsId, idx) {
       const slides = document.getElementById(slidesId);
@@ -1356,6 +1382,7 @@
     // Auto-advance both sliders (offset timings so they don't sync)
     setInterval(() => slideMove('slider1','slides1','dots1', 1), 3200);
     setInterval(() => slideMove('slider2','slides2','dots2', 1), 2800);
+    setInterval(() => slideMove('slider3','slides3','dots3', 1), 3000);
 
     // Mobile menu
     function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
