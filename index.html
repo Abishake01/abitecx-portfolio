@@ -314,6 +314,23 @@
       padding: 16px; flex-shrink: 0;
     }
 
+    .project-shot {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      background: #fff;
+    }
+
+    .project-shot-wrap {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+    }
+
     /* App chrome wrapper */
     .app-chrome {
       width: 92%; height: 185px;
@@ -1029,176 +1046,36 @@
 
             <!-- Slide 1: Dashboard -->
             <div class="slide">
-              <div class="app-chrome">
-                <div class="app-topbar"><div class="app-topbar-dot atd1"></div><div class="app-topbar-dot atd2"></div><div class="app-topbar-dot atd3"></div><div class="app-topbar-url"></div></div>
-                <div class="app-body">
-                  <div class="app-sidebar">
-                    <div class="sidebar-logo">P</div>
-                    <div class="sidebar-item active"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                  </div>
-                  <div class="app-main">
-                    <div class="dash-title"></div>
-                    <div class="dash-sub"></div>
-                    <div class="dash-cards">
-                      <div class="dash-card"><div class="dc-label"></div><div class="dc-val"></div><div class="dc-icon dc-green">₹</div></div>
-                      <div class="dash-card"><div class="dc-label"></div><div class="dc-val"></div><div class="dc-icon dc-blue">📦</div></div>
-                      <div class="dash-card"><div class="dc-label"></div><div class="dc-val"></div><div class="dc-icon dc-orange">⚠</div></div>
-                      <div class="dash-card"><div class="dc-label"></div><div class="dc-val"></div><div class="dc-icon dc-purple">👥</div></div>
-                    </div>
-                    <div class="dash-row">
-                      <div class="dash-chart">
-                        <div class="chart-title"></div>
-                        <div class="chart-bars">
-                          <div class="chart-bar" style="height:20%"></div>
-                          <div class="chart-bar" style="height:40%"></div>
-                          <div class="chart-bar" style="height:25%"></div>
-                          <div class="chart-bar" style="height:60%"></div>
-                          <div class="chart-bar" style="height:35%"></div>
-                          <div class="chart-bar" style="height:80%"></div>
-                          <div class="chart-bar" style="height:45%"></div>
-                        </div>
-                      </div>
-                      <div class="dash-recent">
-                        <div class="recent-title"></div>
-                        <div class="recent-row"><div class="rr-name"></div><div class="rr-amt"></div></div>
-                        <div class="recent-row"><div class="rr-name" style="width:32px"></div><div class="rr-amt"></div></div>
-                        <div class="recent-row"><div class="rr-name" style="width:36px"></div><div class="rr-amt"></div></div>
-                        <div class="recent-row"><div class="rr-name" style="width:28px"></div><div class="rr-amt"></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/shop_dash.png" alt="LuckyShopz dashboard screenshot" />
               </div>
             </div>
 
             <!-- Slide 2: Product Inventory -->
             <div class="slide">
-              <div class="app-chrome">
-                <div class="app-topbar"><div class="app-topbar-dot atd1"></div><div class="app-topbar-dot atd2"></div><div class="app-topbar-dot atd3"></div><div class="app-topbar-url"></div></div>
-                <div class="app-body">
-                  <div class="app-sidebar">
-                    <div class="sidebar-logo">P</div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item active"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                  </div>
-                  <div class="app-main">
-                    <div class="inv-header"><div class="inv-title-bar"><div class="inv-icon"></div><div class="inv-title"></div></div><div class="inv-add-btn"></div></div>
-                    <div class="inv-search"><div class="inv-search-icon"></div><div class="inv-search-ph"></div></div>
-                    <div class="inv-table">
-                      <div class="inv-thead"><div class="th" style="flex:1.5"></div><div class="th" style="flex:1"></div><div class="th" style="flex:0.8"></div><div class="th" style="flex:0.7"></div><div class="th" style="flex:0.6"></div></div>
-                      <div class="inv-row"><div class="inv-thumb"></div><div class="inv-info"><div class="inv-pname"></div><div class="inv-brand"></div></div><div class="inv-cat"><div class="inv-cat-lbl"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-green"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb"></div><div class="inv-info"><div class="inv-pname" style="width:70%"></div><div class="inv-brand"></div></div><div class="inv-cat"><div class="inv-cat-lbl"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-yellow"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb"></div><div class="inv-info"><div class="inv-pname" style="width:85%"></div><div class="inv-brand"></div></div><div class="inv-cat"><div class="inv-cat-lbl"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-red"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb"></div><div class="inv-info"><div class="inv-pname" style="width:60%"></div><div class="inv-brand"></div></div><div class="inv-cat"><div class="inv-cat-lbl"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-green"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/shop_product.png" alt="LuckyShopz product inventory screenshot" />
               </div>
             </div>
 
             <!-- Slide 3: Phone Inventory -->
             <div class="slide" style="background:#EFF6FF;">
-              <div class="app-chrome">
-                <div class="app-topbar"><div class="app-topbar-dot atd1"></div><div class="app-topbar-dot atd2"></div><div class="app-topbar-dot atd3"></div><div class="app-topbar-url"></div></div>
-                <div class="app-body">
-                  <div class="app-sidebar">
-                    <div class="sidebar-logo">P</div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item active"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                  </div>
-                  <div class="app-main">
-                    <div class="inv-header"><div class="inv-title-bar"><div class="inv-icon" style="background:#6366f1"></div><div class="inv-title"></div></div><div class="inv-add-btn" style="background:#6366f1"></div></div>
-                    <div class="inv-search"><div class="inv-search-icon"></div><div class="inv-search-ph"></div></div>
-                    <div class="inv-table">
-                      <div class="inv-thead"><div class="th" style="flex:1.5"></div><div class="th" style="flex:1"></div><div class="th" style="flex:1"></div><div class="th" style="flex:0.8"></div><div class="th" style="flex:0.7"></div></div>
-                      <div class="inv-row"><div class="inv-thumb" style="background:#d1fae5"></div><div class="inv-info"><div class="inv-pname"></div><div class="inv-brand"></div></div><div class="inv-cat" style="background:#ede9fe; border-color:#c4b5fd"><div class="inv-cat-lbl" style="background:#8b5cf6"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-yellow"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb" style="background:#fee2e2"></div><div class="inv-info"><div class="inv-pname" style="width:75%"></div><div class="inv-brand"></div></div><div class="inv-cat" style="background:#ede9fe; border-color:#c4b5fd"><div class="inv-cat-lbl" style="background:#8b5cf6"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-yellow"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb" style="background:#dbeafe"></div><div class="inv-info"><div class="inv-pname" style="width:65%"></div><div class="inv-brand"></div></div><div class="inv-cat" style="background:#ede9fe; border-color:#c4b5fd"><div class="inv-cat-lbl" style="background:#8b5cf6"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-green"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                      <div class="inv-row"><div class="inv-thumb" style="background:#fef3c7"></div><div class="inv-info"><div class="inv-pname" style="width:80%"></div><div class="inv-brand"></div></div><div class="inv-cat" style="background:#ede9fe; border-color:#c4b5fd"><div class="inv-cat-lbl" style="background:#8b5cf6"></div></div><div class="inv-price"><div class="inv-price-val"></div><div class="inv-price-cost"></div></div><div class="inv-stock"><div class="inv-stock-num"></div><div class="stock-badge badge-green"><div class="badge-lbl"></div></div></div><div class="inv-actions"><div class="action-btn action-edit"></div><div class="action-btn action-del"></div></div></div>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/shop_phones.png" alt="LuckyShopz phone inventory screenshot" />
               </div>
             </div>
 
             <!-- Slide 4: Sales History -->
             <div class="slide" style="background:#F0FDF4;">
-              <div class="app-chrome">
-                <div class="app-topbar"><div class="app-topbar-dot atd1"></div><div class="app-topbar-dot atd2"></div><div class="app-topbar-dot atd3"></div><div class="app-topbar-url"></div></div>
-                <div class="app-body">
-                  <div class="app-sidebar">
-                    <div class="sidebar-logo">P</div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item active"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                  </div>
-                  <div class="app-main">
-                    <div class="sales-hdr-title"></div>
-                    <div class="sales-hdr-sub"></div>
-                    <div class="sales-filters"><div class="sales-search"></div><div class="sales-filter-btn"></div><div class="sales-filter-btn"></div></div>
-                    <div class="inv-thead"><div class="th" style="flex:0.8"></div><div class="th" style="flex:1"></div><div class="th" style="flex:1"></div><div class="th" style="flex:0.7"></div><div class="th" style="flex:0.6"></div><div class="th" style="flex:0.6"></div></div>
-                    <div class="sales-row"><div class="sr-id"></div><div class="sr-cust"><div class="sr-name"></div><div class="sr-phone"></div></div><div class="sr-date"></div><div class="sr-amt"></div><div class="sr-pay"></div><div class="sr-status"></div><div class="sr-view"></div></div>
-                    <div class="sales-row"><div class="sr-id"></div><div class="sr-cust"><div class="sr-name" style="width:80%"></div><div class="sr-phone"></div></div><div class="sr-date"></div><div class="sr-amt"></div><div class="sr-pay"></div><div class="sr-status"></div><div class="sr-view"></div></div>
-                    <div class="sales-row"><div class="sr-id"></div><div class="sr-cust"><div class="sr-name" style="width:65%"></div><div class="sr-phone"></div></div><div class="sr-date"></div><div class="sr-amt"></div><div class="sr-pay"></div><div class="sr-status"></div><div class="sr-view"></div></div>
-                    <div class="sales-row"><div class="sr-id"></div><div class="sr-cust"><div class="sr-name" style="width:70%"></div><div class="sr-phone"></div></div><div class="sr-date"></div><div class="sr-amt"></div><div class="sr-pay"></div><div class="sr-status"></div><div class="sr-view"></div></div>
-                    <div class="sales-row"><div class="sr-id"></div><div class="sr-cust"><div class="sr-name" style="width:55%"></div><div class="sr-phone"></div></div><div class="sr-date"></div><div class="sr-amt"></div><div class="sr-pay"></div><div class="sr-status"></div><div class="sr-view"></div></div>
-                  </div>
-                </div>
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/shop_sales.png" alt="LuckyShopz sales history screenshot" />
               </div>
             </div>
 
             <!-- Slide 5: Reports -->
             <div class="slide" style="background:#1e293b;">
-              <div class="app-chrome">
-                <div class="app-topbar"><div class="app-topbar-dot atd1"></div><div class="app-topbar-dot atd2"></div><div class="app-topbar-dot atd3"></div><div class="app-topbar-url"></div></div>
-                <div class="app-body">
-                  <div class="app-sidebar">
-                    <div class="sidebar-logo">P</div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item"><div class="sidebar-dot"></div><div class="sidebar-lbl"></div></div>
-                    <div class="sidebar-item active" style="background:#dbeafe"><div class="sidebar-dot" style="background:#3b82f6"></div><div class="sidebar-lbl" style="background:#93c5fd"></div></div>
-                  </div>
-                  <div class="app-main">
-                    <div class="rep-header"><div><div class="rep-title"></div></div><div class="rep-export"></div></div>
-                    <div class="rep-tabs"><div class="rep-tab active"><div class="rep-tab-lbl"></div></div><div class="rep-tab"><div class="rep-tab-lbl"></div></div><div class="rep-tab"><div class="rep-tab-lbl"></div></div><div class="rep-tab"><div class="rep-tab-lbl"></div></div></div>
-                    <div class="rep-metrics">
-                      <div class="rep-metric"><div class="rm-label"></div><div class="rm-val"></div><div class="rm-growth"></div></div>
-                      <div class="rep-metric"><div class="rm-label"></div><div class="rm-val" style="width:35px"></div><div class="rm-growth"></div></div>
-                      <div class="rep-metric"><div class="rm-label"></div><div class="rm-val" style="width:50px"></div><div class="rm-growth"></div></div>
-                      <div class="rep-metric"><div class="rm-label"></div><div class="rm-val" style="width:25px"></div><div class="rm-growth"></div></div>
-                    </div>
-                    <div class="rep-charts">
-                      <div class="rep-chart">
-                        <div class="rc-title"></div>
-                        <div class="line-chart">
-                          <svg class="line-svg" viewBox="0 0 120 45" preserveAspectRatio="none">
-                            <polyline points="0,40 20,35 40,10 60,8 80,30 100,20 120,15" fill="none" stroke="#3b82f6" stroke-width="2"/>
-                            <polyline points="0,40 20,35 40,10 60,8 80,30 100,20 120,15" fill="url(#grad)" stroke="none"/>
-                            <defs><linearGradient id="grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="rep-chart">
-                        <div class="rc-title"></div>
-                        <div style="display:flex;flex-direction:column;gap:4px;margin-top:4px;">
-                          <div style="display:flex;align-items:center;gap:4px"><div style="height:5px;width:40%;background:#3b82f6;border-radius:2px"></div><div style="height:5px;width:20px;background:#cbd5e1;border-radius:2px"></div></div>
-                          <div style="display:flex;align-items:center;gap:4px"><div style="height:5px;width:30%;background:#6366f1;border-radius:2px"></div><div style="height:5px;width:20px;background:#cbd5e1;border-radius:2px"></div></div>
-                          <div style="display:flex;align-items:center;gap:4px"><div style="height:5px;width:55%;background:#22c55e;border-radius:2px"></div><div style="height:5px;width:20px;background:#cbd5e1;border-radius:2px"></div></div>
-                          <div style="display:flex;align-items:center;gap:4px"><div style="height:5px;width:20%;background:#f59e0b;border-radius:2px"></div><div style="height:5px;width:20px;background:#cbd5e1;border-radius:2px"></div></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-shot-wrap">
+                <img class="project-shot" src="images/shop_report.png" alt="LuckyShopz reports screenshot" />
               </div>
             </div>
 
@@ -1400,6 +1277,9 @@
             <span class="tag">WhatsApp CTA</span>
             <span class="tag">Dark Theme</span>
           </div>
+          <a href="https://dj-ram-three.vercel.app/" target="_blank" class="project-live">
+            View Live ↗
+          </a>
         </div>
       </div>
       <div class="project-card fade-up">
